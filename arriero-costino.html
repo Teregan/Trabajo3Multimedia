@@ -1,0 +1,159 @@
+<!-- === BEGIN HEADER === -->
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+    <!--<![endif]-->
+    <head>
+        <!-- Title -->
+        <title>Lircunlauta - casa museo</title>
+        <!-- Meta -->
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <!-- Favicon -->
+        <link href="favicon.ico" rel="shortcut icon">
+        <!-- Bootstrap Core CSS -->
+        <link rel="stylesheet" href="assets/css/bootstrap.css" rel="stylesheet">
+        <!-- Template CSS -->
+        <link rel="stylesheet" href="assets/css/animate.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/nexus.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/responsive.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/custom.css" rel="stylesheet">
+        <!-- Google Fonts-->
+        <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=PT+Sans" type="text/css" rel="stylesheet">
+        <link href="http://fonts.googleapis.com/css?family=Roboto:400,300" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div id="body-bg">
+            <div id="pre-header" class="container" style="height: 40px">
+                <!-- Spacing above header -->
+            </div>
+            <div id="header">
+                <div class="container">
+                    <div class="row">
+                        <!-- Logo -->
+                        <div class="logo">
+                            <a href="index.html" title="">
+                                <img src="assets/img/logo.png" alt="Logo" />
+                            </a>
+                        </div>
+                        <!-- End Logo -->
+                    </div>
+                </div>
+            </div>
+            <!-- Top Menu -->
+            <div id="hornav" class="container no-padding">
+                <div class="row">
+                    <div class="col-md-12 no-padding">
+                        <div class="text-center">
+                            <ul id="hornavmenu" class="nav navbar-nav">
+                                <li>
+                                    <a href="index.html" class="fa-home">Home</a>
+                                </li>
+								<li>
+                                    <a href="salas.html" class="fa-th">Sala</a>
+                                </li>
+								<li>
+                                    <a href="index.html" class="fa-gears">Museo</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Top Menu -->
+            <div id="post_header" class="container" style="height: 40px">
+                <!-- Spacing below header -->
+            </div>
+            <div id="content-top-border" class="container">
+            </div>
+            <!-- === END HEADER === -->
+            <!-- === BEGIN CONTENT === -->
+            <div id="content">
+                <div class="container background-white">
+                    <div class="row margin-vert-30">
+                        <div class="col-md-12">
+                            <h2>Arriero Costino</h2>
+                            <div class="row">
+                                <div class="col-md-6 animate fadeIn">
+                                    <video src="assets/video/arriero1.mp4" width="500" height="360" controls>
+									Su navegador no soporta la etiqueta de vídeo.
+								  </video>
+                                    
+                                </div>
+                                <div class="col-md-6 margin-bottom-10 animate fadeInRight">
+                                    <h3 class="padding-top-10 pull-left">Al hacer una semblanza
+                                        <small>- Gabriela Mistral</small>
+                                    </h3>
+                                    <div class="clearfix"></div>
+                                    <h4>
+                                        <em>El vocablo de huaso vale en </br>
+											la chilenidad por los cinco </br>
+											dardos de la estrella solitario </br>
+											y la palabra, oído por el </br>
+											chileno ausente, lo remueve </br>
+											como si le pusiese de pronto </br>
+											en las manos un gajo de </br>
+											copihues trabados</em>
+                                    </h4>
+									
+									<div class="contenedor-audio">
+									  </em><i class="fas fa-volume-up" id="boton-sonido"> </i>
+									  <audio src="assets/audio/arriero3.mp3" id="audio"></audio>
+									</div>
+									
+                                    
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row animate fadeInUp">
+                                <h2 class="text-center margin-top-10">Guardianes de la tradición</h2>
+                                <p class="text-left margin-bottom-30">Su legado va más allá de la conducción de ganado. Los arrieros costinos son guardianes de las tradiciones chilenas, transmitiendo de generación en generación sus costumbres, sus cantos y sus bailes. Su música, conocida como "tonada", y sus bailes, como la cueca, son expresiones vibrantes de la cultura chilena que cautivan a propios y extraños.</p>
+								<p class="text-left margin-bottom-30">En cada caleta y pueblo costero de Chile, el legado de los arrieros costinos se hace presente. Su presencia en ferias, festivales y fiestas populares nos recuerda la importancia de preservar nuestras tradiciones y de honrar a aquellos que han dedicado su vida a mantener viva la esencia de nuestra identidad.</p>
+								<div class="contenedor-audio">
+									  </em><i class="fas fa-volume-up" id="boton-sonido2"> </i>
+									  <audio src="assets/audio/arriero4.mp3" id="audio2"></audio>
+									</div>
+                            </div>
+                            <hr class="margin-bottom-40">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- === END CONTENT === -->
+            <!-- === BEGIN FOOTER === -->
+            <div id="content-bottom-border" class="container">
+            </div>
+            <script>
+			const botonSonido = document.getElementById('boton-sonido');
+			const botonSonido2 = document.getElementById('boton-sonido2');
+			const audio = document.getElementById('audio');
+			const audio2 = document.getElementById('audio2');
+
+			botonSonido.addEventListener('click', () => {
+			  if (!audio.paused) {
+				audio.pause();
+			  } else {
+				audio.play();
+			  }
+			});
+			
+			botonSonido2.addEventListener('click', () => {
+			  if (!audio2.paused) {
+				audio2.pause();
+			  } else {
+				audio2.play();
+			  }
+			});
+			</script>
+            
+            
+    </body>
+</html>
+<!-- === END FOOTER === -->
