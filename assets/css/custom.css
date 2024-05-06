@@ -1,0 +1,22 @@
+.contenedor-audio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#audio {
+  display: none; /* Oculta el audio por defecto */
+}
+
+.fas.fa-volume-up {
+  font-size: 24px; /* Ajusta el tamaño del ícono */
+  cursor: pointer; /* Cambia el cursor a mano al hover */
+}
+.video {
+  max-width: 50%;
+  height: auto;
+  object-fit: contain;
+}
+.qr{
+	 width: 100px;
+}
